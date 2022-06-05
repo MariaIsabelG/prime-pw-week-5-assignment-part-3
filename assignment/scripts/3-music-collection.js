@@ -3,17 +3,16 @@ console.log('***** Music Collection *****')
 let collection=[];
 
 function addToCollection ( title, artist, yearPublished ){
-    const newObject = {
-        songTitle: title,
-        albumArtist: artist,
-        year = yearPublished,
-    collection = newObject.push() 
+    const newObject = {}    
+        newObject.title = title;
+        newObject.artist = artist;
+        newObject.yearPublished = yearPublished; 
+        return newObject
 }
-    return newObject
 
-new addToCollection( 'Rio', 'Perota Chingo', 2020 );
-new addToCollection('Amor eterno', 'Juan Gabriel', 2020 );
-new addToCollection( 'Abrazame', 'Juan Gabriel', 1990 );
+const collection1 = addToCollection( 'Rio', 'Perota Chingo', 2020 );
+const collecion2 = addToCollection('Amor eterno', 'Juan Gabriel', 2020 );
+const collection3 = addToCollection( 'Abrazame', 'Juan Gabriel', 1990 );
 
 
 
