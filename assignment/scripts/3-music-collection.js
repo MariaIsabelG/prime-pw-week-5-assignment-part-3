@@ -12,7 +12,7 @@ function addToCollection ( title, artist, yearPublished ){
 } //end of function to create new objects with properties (title, artist, yearPublished) and add objects to collection array
 
 const collection1 = addToCollection( 'Rio', 'Perota Chingo', 2020 );
-console.log( 'Our first collection is:', collection1);
+console.log( 'Our first collection is:', collection1 );
 
 const collecion2 = addToCollection( 'Amor eterno', 'Juan Gabriel', 2020 );
 console.log( 'Our second collection is:', collecion2 );
@@ -29,8 +29,15 @@ console.log( 'Our fifth collection is:', collection5 );
 const collection6 = addToCollection( 'Mañana', 'Juanes', 2006); 
 console.log( 'Our sixth collection is:', collection6 );// testing function and logging all new objects
 
-console.log('The collection array is now:', collection);// logging the updated collection array
+console.log( 'The collection array is now:', collection );// logging the updated collection array
 
+
+function showCollection ( anyArray ){
+    console.log( anyArray.length );
+    for( let i=0; i<anyArray.length; i++){
+        console.log(`${anyArray[anyObject.title]} by ${anyArray[anyObject.artist]}, published in ${anyArray[anyObject.yearPublished]}`)
+    }return anyArray
+}
 
 
 
