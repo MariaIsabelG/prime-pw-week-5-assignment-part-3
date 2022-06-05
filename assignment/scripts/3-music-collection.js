@@ -36,8 +36,6 @@ console.log('The collection array is now:', collection);// logging the updated c
 
 
 
-
-
 //- Create a variable `collection` that starts as an empty array.
 
 //- Add a function named `addToCollection`. This function should:
