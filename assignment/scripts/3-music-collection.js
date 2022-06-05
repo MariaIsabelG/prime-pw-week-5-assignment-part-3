@@ -10,7 +10,9 @@ function addToCollection ( title, artist, yearPublished ){
     return newObject 
 }
 
-
+new addToCollection( 'Rio', 'Perota Chingo', 2020 );
+new addToCollection('Amor eterno', 'Juan Gabriel', 2020 );
+new addToCollection( 'Abrazame', 'Juan Gabriel', 1990 );
 
 
 
