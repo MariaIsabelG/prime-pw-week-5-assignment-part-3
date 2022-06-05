@@ -7,7 +7,8 @@ function addToCollection ( title, artist, yearPublished ){
         newObject.title = title;
         newObject.artist = artist;
         newObject.yearPublished = yearPublished; 
-        return newObject
+        collection.push(newObject)
+    return newObject
 }
 
 const collection1 = addToCollection( 'Rio', 'Perota Chingo', 2020 );
