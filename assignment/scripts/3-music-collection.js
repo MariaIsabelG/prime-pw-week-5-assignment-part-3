@@ -1,6 +1,6 @@
 console.log('***** Music Collection *****')
 
-let collection=[];
+let collection=[]; //creation of new array
 
 function addToCollection ( title, artist, yearPublished ){
     const newObject = {}    
@@ -9,11 +9,11 @@ function addToCollection ( title, artist, yearPublished ){
         newObject.yearPublished = yearPublished; 
         collection.push(newObject)
     return newObject
-}
+} //end of function to create new objects with properties and add objects to collection array
 
 const collection1 = addToCollection( 'Rio', 'Perota Chingo', 2020 );
 const collecion2 = addToCollection('Amor eterno', 'Juan Gabriel', 2020 );
-const collection3 = addToCollection( 'Abrazame', 'Juan Gabriel', 1990 );
+const collection3 = addToCollection( 'Abrazame', 'Juan Gabriel', 1990 ); // calling the function addToCollection to test function
 
 
 
