@@ -9,11 +9,15 @@ function addToCollection ( title, artist, yearPublished ){
         newObject.yearPublished = yearPublished; 
         collection.push(newObject)
     return newObject
-} //end of function to create new objects with properties and add objects to collection array
+} //end of function to create new objects with properties (title, artist, yearPublished) and add objects to collection array
 
 const collection1 = addToCollection( 'Rio', 'Perota Chingo', 2020 );
 const collecion2 = addToCollection('Amor eterno', 'Juan Gabriel', 2020 );
-const collection3 = addToCollection( 'Abrazame', 'Juan Gabriel', 1990 ); // calling the function addToCollection to test function
+const collection3 = addToCollection( 'Abrazame', 'Juan Gabriel', 1990 ); 
+const collection4 = addToCollection('Melones', 'Perota Chingo', 1990);
+const collection5 = addToCollection('Melones', 'Lizzo', 2019);
+const collection6 = addToCollection( 'Mañana', 'Juanes', 2006); // testing function
+
 
 
 
