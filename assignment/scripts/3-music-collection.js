@@ -8,33 +8,24 @@ function addToCollection ( title, artist, yearPublished ){
         newObject.artist = artist;
         newObject.yearPublished = yearPublished; 
     collection.push(newObject)
-    return newObject
+    return console.log(newObject);
 } //end of function to create new objects with properties (title, artist, yearPublished) and add objects to collection array
 
-const collection1 = addToCollection( 'Rio', 'Perota Chingo', 2020 );
-console.log( 'Our first collection is:', collection1 );
-
-const collecion2 = addToCollection( 'Amor eterno', 'Juan Gabriel', 2020 );
-console.log( 'Our second collection is:', collecion2 );
-
-const collection3 = addToCollection( 'Abrazame', 'Juan Gabriel', 1990 ); 
-console.log( 'Our third collection is:', collection3 );
-
-const collection4 = addToCollection('Melones', 'Perota Chingo', 1990);
-console.log( 'Our fourth collections is:', collection4 );
-
-const collection5 = addToCollection('Melones', 'Lizzo', 2019);
-console.log( 'Our fifth collection is:', collection5 );
-
-const collection6 = addToCollection( 'Mañana', 'Juanes', 2006); 
-console.log( 'Our sixth collection is:', collection6 );// testing function and logging all new objects
+addToCollection('Rio', 'Perota Chingo', 2020 );
+addToCollection( 'Amor eterno', 'Juan Gabriel', 2020 );
+addToCollection( 'Abrazame', 'Juan Gabriel', 1990 ); 
+addToCollection('Melones', 'Perota Chingo', 1990);
+addToCollection('Melones', 'Lizzo', 2019);
+addToCollection( 'Mañana', 'Juanes', 2006); 
+// testing function and logging all new objects
 
 console.log( 'The collection array is now:', collection );// logging the updated collection array
 
 
 function showCollection ( anyArray ){
-    console.log( anyArray.length );
+    console.log( 'The number of this array is:', anyArray.length );
     for( let i=0; i<anyArray.length; i++){
+        anyObject = anyArray[i]
         console.log(`${anyArray[anyObject.title]} by ${anyArray[anyObject.artist]}, published in ${anyArray[anyObject.yearPublished]}`)
     }return anyArray
 }
