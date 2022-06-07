@@ -27,9 +27,19 @@ function showCollection ( anyArray ){
     for( let i=0; i<anyArray.length; i++){
         console.log(`${anyArray[i].title} by ${anyArray[i].artist}, published in ${anyArray[i].yearPublished}`)
     }return anyArray
-    }
+    }//function to log each object in the collection array
 
-showCollection(collection);
+showCollection(collection);// testing showCollection function
+
+function findByArtist(artist){
+    let newArray=[];
+    for( i=0; i<collection.length; i++ );
+    if(collection[i].artist === artist){
+        newArray.push(anyArray[i])
+    }return console.log(collection[i])
+}
+
+findByArtist('Lizzo');
 
 
 
