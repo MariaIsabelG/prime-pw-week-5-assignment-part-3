@@ -25,12 +25,11 @@ console.log( 'The collection array is now:', collection );// logging the updated
 function showCollection ( anyArray ){
     console.log( 'The number of this array is:', anyArray.length );
     for( let i=0; i<anyArray.length; i++){
-        anyObject = anyArray[i]
-        console.log(`${anyArray[anyObject.title]} by ${anyArray[anyObject.artist]}, published in ${anyArray[anyObject.yearPublished]}`)
+        console.log(`${anyArray[i].title} by ${anyArray[i].artist}, published in ${anyArray[i].yearPublished}`)
     }return anyArray
-}
+    }
 
-
+showCollection(collection);
 
 
 
